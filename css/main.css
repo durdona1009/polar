@@ -1,0 +1,811 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  /* @font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Black.woff2') format('woff2'),
+        url('../fonts/Roboto-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+   */
+  @font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
+        url('../fonts/Roboto-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Hind Madurai';
+    src: url('../fonts/HindMadurai-Regular.woff2') format('woff2'),
+        url('../fonts/HindMadurai-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hind Madurai';
+    src: url('../fonts/HindMadurai-Bold.woff2') format('woff2'),
+        url('../fonts/HindMadurai-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hind Madurai';
+    src: url('../fonts/HindMadurai-SemiBold.woff2') format('woff2'),
+        url('../fonts/HindMadurai-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Hind Madurai';
+    src: url('../fonts/HindMadurai-Medium.woff2') format('woff2'),
+        url('../fonts/HindMadurai-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fredoka One';
+    src: url('../fonts/FredokaOne-Regular.woff2') format('woff2'),
+        url('../fonts/FredokaOne-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", "Arial", san-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.5;
+    color: #000000;
+}
+
+p {
+    margin: 0;
+}
+
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    background-color: rgba(242, 206, 218, 0.3);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+    align-items: baseline;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.nav-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    margin-right: 40px;
+}
+
+.nav-item:last-child {
+    margin-right: 172px;
+}
+
+.nav-link {
+    text-decoration: none;
+    display: block;
+    padding: 15px 0;
+    font-size: 14px;
+    line-height: 16px;
+    color: #150101;
+    transition: 150ms ease all;
+}
+
+.nav-link:hover {
+    color: #D23166;
+    
+}
+
+.nav-link:active {
+    opacity: 0.5;
+}
+
+.nav-link:last-child {
+    margin-right: 40px;
+}
+
+.nav-link-active {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #D23166;
+}
+
+.buy-link {
+    text-decoration: none;
+    padding: 14px 50px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FAFAFA;
+    background-color: #D23166;
+    border-radius: 5px;
+}
+
+.logo-img {
+    display: block;
+}
+
+/* .nav-item {
+    
+} */
+
+/* INTRO */
+
+.intro {
+    
+    background-color: rgba(242, 206, 218, 0.3);
+    /* position: relative; */
+    display: block;
+    background-image: url("../img/intro-img.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% - 50px + (742px / 2)) bottom;
+    /* position: absolute;
+    left: 690px;
+    top: 126px;
+    width: 895px;
+    height: 742px; */
+}
+
+.intro-container {
+    padding-top: 196px;
+    padding-bottom: 213px;
+    
+}
+
+/* .intro-content::before {
+    
+    content: '';
+} */
+
+
+
+.intro-content {
+    width: 665px;
+}
+
+.intro-slogan {
+
+    margin: 6px 0 35px;
+    font-family: 'Fredoka One', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 57.33px;
+    line-height: 120.5%;
+    color: rgba(15, 1, 1, 0.9);
+}
+
+.intro-slogan-inner {
+    color: #D23166;
+}
+
+.intro-description {
+    margin-bottom: 50px;
+    font-family: 'Hind Madurai';
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #0F0101;
+}
+
+
+/* SERVICES */
+
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.services {
+    padding: 100px 0;
+    /* display: flex; */
+}
+
+.services-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+.services-title {
+    margin: 0;
+    /* margin-top: 25px; */
+    margin-bottom: 9px;
+    font-family: "Hind Madurai";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.services-description {
+    font-family: Hind Madurai;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.services-item {
+    margin-right: 39px;
+    padding: 101px 26px 27px;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    border-radius: 7px;
+    background-image: url("../img/car.svg");
+    background-repeat: no-repeat;
+    background-position: top 33px center;
+    
+}
+
+.services-item-packaging {
+    background-image: url("../img/packeging.svg");
+    background-repeat: no-repeat;
+    background-position: top 33px center;
+}
+
+.services-item-cash {
+    background-image: url("../img/cash-back.svg");
+    background-repeat: no-repeat;
+    background-position: top 33px center;
+}
+
+.services-item-fast {
+    background-image: url("../img/fast-delivery.svg");
+    background-repeat: no-repeat;
+    background-position: top 33px center;
+}
+
+.services-item:hover {
+    border: none;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.03);
+}
+
+.services-item:last-child {
+    margin-right: 0;
+}
+
+
+/* BROWN SUGAR */
+
+.brown {
+    
+    position: relative;
+    background-color: #F8EDF0;
+}
+
+.brown-container {
+    padding: 141px 0 146px;
+}
+
+.brown-content {
+    display: inline-block;
+    margin-right: 74px;
+    width: 442px;
+    
+}
+
+.brown-title {
+    margin: 0;
+    font-family: Hind Madurai;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44.2px;
+    line-height: 49px;
+    color: #150101;
+}
+
+.brown-description {
+    margin: 16px 0 35px;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(21, 1, 1, 0.6);
+}
+
+.brown-img {
+    position: absolute;
+    left: calc(50% + 31px);
+    top: -72px;
+    bottom: 40px;
+
+}
+
+.see-link {
+    text-decoration: none;
+    padding: 15px 41px;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FAFAFA;
+    background-color: #D23166;
+    border-radius: 5px; 
+}
+
+/* PRODUCT */
+
+.products {
+    padding: 137px 0 149px;
+}
+
+.product-title {
+    margin: 0;
+    text-align: center;
+    font-family: "Hind Madurai";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44.2px;
+    line-height: 61px;
+    color: #150101;
+}
+
+.product-header {
+    display: block;
+    margin: 64px auto 46px;
+}
+
+.product-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(0, 0, 0, 0.6);
+    border-bottom: 3px solid transparent;
+    transition: 150ms ease all;
+}
+
+.product-link:hover {
+    color: #000000;
+    border-color: #D64374;
+}
+
+.product-link:active {
+    opacity: 0.5;
+}
+
+.product-link-active {
+    margin-bottom: 4px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    border-bottom: 3px solid #D64374;
+}
+
+
+.ice-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ice-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.ice-item:nth-child(even) .ice-content {
+    margin-left: 0;
+    margin-right: 85px;
+    text-align: right;
+}
+
+.ice-content {
+    width: 454px;
+    margin-left: 85px;
+    margin-top: 124px;
+}
+
+.ice-title {
+    margin: 0;
+    font-family: "Hind Madurai";
+    font-style: normal;
+    font-size: 26px;
+    line-height: 36px;
+    color: #000000;
+}
+
+/* .ice-item-brown {
+    margin-bottom: 151px;
+} */
+
+.ice-text {
+    margin: 11px 0 28px;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.cost {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: baseline;
+}
+
+.present-price {
+    margin-right: 5px;
+    font-family: "Hind Madurai";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 36px;
+}
+
+.old-price {
+    font-family: "Hind Madurai";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+/* FORM */
+
+.form {
+    padding: 150px 0 71px;
+}
+
+.formf {
+    display: block;
+    margin: 0 auto;
+}
+
+.form-txt {
+    width: 522px;
+    margin: 0 auto 36px;
+    font-size: 44px;
+    line-height: 52px;
+    text-align: center;
+}
+
+
+.label {
+    display: block;
+}
+
+.field {
+    display: block;
+    padding: 29px 156px 29px 25px;
+    width: 303px;
+    border: 1px solid #FFA3A3;
+    border-radius: 5px;
+    
+}
+
+.field-mar {
+    margin-right: 30px;
+}
+
+.field-long {
+    width: 637px;
+    padding-right: calc(357px - 134px);
+}
+
+
+
+.form-frst {
+    display: flex;
+}
+
+.form-submit {
+    display: flex;
+    margin-top: 37px;
+    /* position: relative; */
+}
+
+.submit-btn {
+    padding: 28px 31px 28px 46px;
+    background-color: #D64374;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    /* position: absolute;
+    right: 0; */
+}
+
+.cta {
+    padding: 90px 0 150px;
+    
+    background-color: #F8EDF0;
+}
+
+.container {
+    width: 1126px;
+    margin: 0 auto;
+}
+
+.content {
+    padding-left: 440px;
+    position: relative;
+}
+
+.content::before{
+    content: '';
+    display: block;
+    background-image: url("../img/ice-cream.png");
+    background-repeat: no-repeat;
+    width: 1058px;
+    height: 784px;
+    position: absolute;
+    top: 0;
+    right: calc(50% - 100px + (1058px / 2));
+    background-position: center center;
+
+}
+
+
+
+.slogan {
+    margin: 0;
+    font-weight: 500;
+    font-size: 44.2px;
+    line-height: 52px;
+    color: #000000;
+}
+
+.description {
+    margin-top: 20px;
+    margin-bottom: 31px;
+    width: 607px;
+    line-height: 21px;
+    color: #0F0101;
+    font-size: 18px;
+}
+
+.cta-item {
+    margin-bottom: 19px;
+    display: flex;
+}
+
+.cta-item:last-child {
+    margin-bottom: 41px;
+}
+
+.cta-rectangle {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+}
+
+.cta-rectangle-pointer{
+    background-image: url("../img/pointer-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.cta-rectangle-cart {
+    background-image: url("../img/add-cart.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.cta-rectangle-order {
+    background-image: url("../img/order-list.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.item-description {
+    margin-left: 21px;
+}
+
+.images {
+    display: flex;
+    align-items: center;
+}
+
+/* FOOTER */
+
+.footer {
+    padding: 70px 0 104px;
+    background-color: #0A0808;
+}
+
+.footer-content {
+    display: flex;
+}
+
+.polar {
+    width: 207px;
+    margin-right: 37px;
+}
+
+.footer-text {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.follow {
+    margin: 25px 0 8px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+
+.socials-list {
+    display: flex;
+}
+
+.socials-link {
+    display: inline-block;
+}
+
+.social {
+    margin-right: 10px;
+}
+
+.social:last-child {
+    margin-right: 0;
+}
+
+
+
+.footer-link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    transition: 150ms, ease, all;
+}
+
+.footer-link-active {
+    color: #FFFFFF;
+}
+
+.footer-link:hover {
+    color: #FFFFFF;
+}
+
+.navigations {
+    margin-right: 132px;
+    padding-top: 70px;
+}
+
+.benefits {
+    padding-top: 70px;
+    margin-right: 150px;
+}
+
+.newsletter {
+    margin-top: 70px;
+    position: relative;
+}
+
+.newalewtter-title {
+    margin: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.question {
+    margin: 13px 0 19px;
+    width: 388px;
+    padding: 20px 289px 19px 32px;
+    background-color: #0A0808;
+    border-radius: 5px;
+    border: 2px solid rgba(214, 67, 116, 0.7);
+}
+
+.question::placeholder {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-btn {
+    padding: 20px 19px;
+    background-color: #D23166;
+    border-color: transparent;
+    /* height: 55px; */
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    position: absolute;
+    top: 33px;
+    right: 0;
+}
+
+.partners-list {
+    display: flex;
+}
+
+.partner {
+    margin-right: 16px;
+}
+
+.partner:last-child {
+    margin-right: 0;
+}
